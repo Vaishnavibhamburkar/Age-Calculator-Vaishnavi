@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lan="en">
+    <head>
+         
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <link rel="icon" type="image/x-icon" href="https://is3-ssl.mzstatic.com/image/thumb/Purple124/v4/fa/9f/97/fa9f970e-03a1-c542-7fff-13d9c2bf1058/source/512x512bb.png">
+    
+        <title>Age-Calculator</title>
+        <link rel="stylesheet" href="./style.css">
+        <script src="./script.js"></script>
+
+    </head>
+
+    <body>
+        <div class="container">
+            <form>
+                <div class="base">
+                    <div class="enter">
+                        <h4>AGE CALCULATOR</h4>
+                    </div>
+                    <div class="block">
+                        <p class="title">Date</p>
+                        <input type="text" name="date" id="date" placeholder="dd" required="required" minlength="1" maxlength="2"/>
+                    </div>
+                    <div class="block">
+                        <p class="title">Month</p>
+                         <input type="text" name="month" id="month" placeholder="mm" required="required" minlength="1" maxlength="2"/>
+                    </div>
+                    <div class="block">
+                        <p class="title">Year</p>
+                         <input type="text" name="year" id="year" placeholder="yyyy" required="required" minlength="4" maxlength="4"/>
+                    </div>
+                </div>
+                <div class="base">
+                    <div class="enter">
+                        <input type="button" name="submit" value="Submit" onclick="age()" />
+                    </div>
+                </div>
+                <div id="age"></div>
+            </form>
+        </div>
+
+    </body>
